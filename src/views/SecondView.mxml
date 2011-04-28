@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" title="SecondView">
+	
+	
+	<s:navigationContent>
+		<s:Button label="Back" click="navigator.popView()"/>
+	</s:navigationContent>
+	
+	<s:VGroup width="100%" height="100%" horizontalAlign="center" paddingTop="20" paddingBottom="20">
+		<s:TextArea width="90%" height="100%" editable="false"
+					selectable="false" text="some text"/>
+		<s:Label id="totalLbl"  
+				 fontWeight="bold" width="90%" text="Total: 0" textAlign="right" styleName="totalLbl"/>
+		
+		<s:HGroup id="buttonsHolder" gap="5">
+			
+			<s:TileGroup requestedColumnCount="3" horizontalGap="5" verticalGap="5">
+				<s:Button label="7" styleName="buttonCalculator" width="75" height="75"/>
+				<s:Button label="8" styleName="buttonCalculator"/>
+				<s:Button label="9" styleName="buttonCalculator"/>
+				
+				<s:Button label="4" styleName="buttonCalculator"/>
+				<s:Button label="5" styleName="buttonCalculator"/>
+				<s:Button label="6" styleName="buttonCalculator"/>
+				
+				<s:Button label="1" styleName="buttonCalculator"/>
+				<s:Button label="2" styleName="buttonCalculator"/>
+				<s:Button label="3" styleName="buttonCalculator"/>
+				
+				<s:Button label="." styleName="buttonCalculator"/>
+				<s:Button label="0" styleName="buttonCalculator"/>
+				<s:Button label="+" styleName="buttonCalculator"/>
+			</s:TileGroup>
+			
+			<s:VGroup verticalAlign="bottom" height="100%" gap="5">
+				<s:HGroup gap="5">
+					<s:Button label="&lt;" styleName="buttonCalculator" width="75" height="75"/>
+					<s:Button label="&gt;" styleName="buttonCalculator" width="75" height="75"/>
+				</s:HGroup>
+				<s:Button label="DEL" styleName="buttonCalculator" width="155" height="75"/>
+			</s:VGroup>
+			
+		</s:HGroup>
+		
+	</s:VGroup>
+</s:View>

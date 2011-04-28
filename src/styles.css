@@ -1,0 +1,43 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+
+
+global {
+	
+}
+
+s|View {
+	backgroundColor: #777777;	
+}
+
+s|TextArea {
+	fontSize: 38;
+	color: #000000;
+	contentBackgroundColor: #F8F3B8;
+}
+s|Label {
+	color: #ffffff;
+	fontSize: 32;
+}
+
+.title {
+	fontSize: 25;
+	color: #ffffff;
+}
+
+.totalLbl {
+	fontSize: 35;
+	color: #FFFFFF;
+}
+
+.labelTip {
+	color: #999999;
+	fontSize: 24;
+}
+
+.buttonCalculator {
+	color: #ffffff;
+	chromeColor: #440014;
+	fontSize: 30;
+}
+
